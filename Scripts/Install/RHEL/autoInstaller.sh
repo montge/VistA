@@ -159,7 +159,7 @@ test -d /home/$instance/g &&
 cat > /etc/yum.repos.d/epel.repo << EOF
 [epel]
 name=epel
-baseurl=http://download.fedoraproject.org/pub/epel/6/\$basearch
+baseurl=http://download.fedoraproject.org/pub/epel/7/\$basearch
 enabled=1
 gpgcheck=0
 EOF
