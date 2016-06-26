@@ -26,4 +26,4 @@ apt-get -y -qq update > /dev/null
 apt-get -y -qq upgrade > /dev/null
 
 # Install baseline packages
-apt-get install -y -qq git xinetd perl wget curl python ssh mysql-server openjdk-7-jdk maven sshpass > /dev/null
+apt-get install -y -qq build-essential cmake-curses-gui git dos2unix daemon sudo apt-utils git xinetd perl wget curl python ssh mysql-server openjdk-7-jdk maven sshpass > /dev/null

@@ -147,21 +147,21 @@ cd /usr/local/src
 git clone -q https://github.com/OSEHRA/VistA -b dashboard VistA-Dashboard
 
 # See if vagrant folder exists if it does use it. if it doesn't clone the repo
-if [ -d /vagrant ]; then
-    scriptdir=/vagrant
+#if [ -d /vagrant ]; then
+#    scriptdir=/vagrant
 
     # Fix line endings
-    find /vagrant -name \"*.sh\" -type f -print0 | xargs -0 dos2unix > /dev/null 2>&1
-    dos2unix /vagrant/EWD/etc/init.d/ewdjs > /dev/null 2>&1
-    dos2unix /vagrant/GTM/etc/init.d/vista > /dev/null 2>&1
-    dos2unix /vagrant/GTM/etc/xinetd.d/vista-rpcbroker > /dev/null 2>&1
-    dos2unix /vagrant/GTM/etc/xinetd.d/vista-vistalink > /dev/null 2>&1
-    dos2unix /vagrant/GTM/gtminstall_SHA1 > /dev/null 2>&1
+#    find /vagrant -name \"*.sh\" -type f -print0 | xargs -0 dos2unix > /dev/null 2>&1
+#    dos2unix /vagrant/EWD/etc/init.d/ewdjs > /dev/null 2>&1
+#    dos2unix /vagrant/GTM/etc/init.d/vista > /dev/null 2>&1
+#    dos2unix /vagrant/GTM/etc/xinetd.d/vista-rpcbroker > /dev/null 2>&1
+#    dos2unix /vagrant/GTM/etc/xinetd.d/vista-vistalink > /dev/null 2>&1
+#    dos2unix /vagrant/GTM/gtminstall_SHA1 > /dev/null 2>&1
 
-else
+#else
     git clone -q https://github.com/OSEHRA/VistA
     scriptdir=/usr/local/src/VistA/Scripts/Install
-fi
+#fi
 
 # bootstrap the system
 cd $scriptdir
