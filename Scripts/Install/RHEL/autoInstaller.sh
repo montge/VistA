@@ -167,7 +167,7 @@ EOF
 # extra utils - used for cmake and dashboards and initial clones
 echo "Updating operating system"
 yum update -y > /dev/null
-yum install -y cmake28 git dos2unix > /dev/null
+yum install -y cmake git dos2unix > /dev/null
 yum install -y http://libslack.org/daemon/download/daemon-0.6.4-1.x86_64.rpm > /dev/null
 
 # Fix cmake28 links
